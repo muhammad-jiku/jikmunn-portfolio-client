@@ -38,7 +38,7 @@ const Banner = () => {
             feel free to connect with me.
           </p>
           <button
-            className="btn glass"
+            className="btn glass btn-sm md:btn-md"
             // onClick={saveFile}
           >
             <a href={resume} target="_blank" rel="noreferrer" download="resume">
@@ -46,7 +46,7 @@ const Banner = () => {
               <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" />
             </a>
           </button>
-          <button class="btn active ml-2">Contact</button>
+          <button class="btn active btn-sm md:btn-md ml-2">Contact</button>
           {/* <button className="btn btn-primary ml-2"></button> */}
         </div>
       </div>
