@@ -2,8 +2,17 @@ import React from 'react';
 import me from '../../../Images/Jikum.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+// import { saveAs } from 'file-saver';
+import resume from '../../../assets/files/MUHAMMAD AZIZUL HOQUE JIKU.pdf';
 
 const Banner = () => {
+  // const saveFile = () => {
+  //   saveAs(
+  //     'https://drive.google.com/file/d/1HscU66zuSmO4VHLfDiFxH-0ypFb0MR9J/view?usp=sharing',
+  //     'resume.pdf'
+  //   );
+  // };
+
   return (
     <div className="hero">
       <div className="hero-content flex-col items-center lg:flex-row-reverse min-h-screen">
@@ -28,14 +37,14 @@ const Banner = () => {
             accumulated over the year. I've also placed all my social links,
             feel free to connect with me.
           </p>
-          <button className="btn glass">
-            <a
-              href="https://drive.google.com/file/d/1HscU66zuSmO4VHLfDiFxH-0ypFb0MR9J/view?usp=sharing"
-              download
-            >
+          <button
+            className="btn glass"
+            // onClick={saveFile}
+          >
+            <a href={resume} target="_blank" rel="noreferrer" download="resume">
               Download Resume{' '}
               <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" />
-            </a>{' '}
+            </a>
           </button>
           <button class="btn active ml-2">Contact</button>
           {/* <button className="btn btn-primary ml-2"></button> */}
