@@ -1,8 +1,24 @@
 import React from 'react';
 
 const Header = () => {
+  const menuItems = (
+    <>
+      <li>
+        <p>About</p>
+      </li>
+      <li>
+        <p>Projects</p>
+      </li>
+      <li>
+        <p>Skills</p>
+      </li>
+      <li>
+        <p>Contact</p>
+      </li>
+    </>
+  );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -23,32 +39,15 @@ const Header = () => {
           </label>
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
           >
-            <li>
-              <p>Item 1</p>
-            </li>
-
-            <li>
-              <p>Item 3</p>
-            </li>
+            {menuItems}
           </ul>
         </div>
         <button className="btn btn-ghost normal-case text-xl">daisyUI</button>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal p-0">
-          <li>
-            <p>Item 1</p>
-          </li>
-
-          <li>
-            <p>Item 3</p>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <button className="btn">Get started</button>
+      <div className="navbar-end hidden lg:flex">
+        <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
     </div>
   );
