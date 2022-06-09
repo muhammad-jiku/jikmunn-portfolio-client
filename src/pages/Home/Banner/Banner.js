@@ -22,12 +22,11 @@ const Banner = () => {
             className="text-4xl md:text-5xl font-bold"
             style={{ fontFamily: 'Newsreader' }}
           >
-            I'm{' '}
-            <span style={{ color: '#88594B' }}>Muhammad Azizul Hoque Jiku</span>
+            I'm <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
           </h1>
           <h1
-            className="text-xl md:text-3xl"
-            style={{ color: '#7C7C7C', fontFamily: 'Headland One' }}
+            className="text-xl md:text-3xl text-secondary"
+            style={{ fontFamily: 'Headland One' }}
           >
             MERN Stack Web Developer
           </h1>
