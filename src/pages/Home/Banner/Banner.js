@@ -45,7 +45,7 @@ const Banner = () => {
               <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" />
             </a>
           </button>
-          <button class="btn active btn-sm md:btn-md ml-2">Contact</button>
+          <button className="btn active btn-sm md:btn-md ml-2">Contact</button>
           {/* <button className="btn btn-primary ml-2"></button> */}
         </div>
       </div>

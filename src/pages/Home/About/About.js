@@ -30,7 +30,9 @@ const About = () => {
         <div className="my-4">
           <h1 className="text-primary text-xl">
             <FontAwesomeIcon icon={faLaptopCode} className="mr-2" size="lg" />{' '}
-            <span style={{ fontFamily: 'Newsreader' }}>Website Develop</span>
+            <span style={{ fontFamily: 'Newsreader' }}>
+              Website Development
+            </span>
           </h1>
           <h1 className="text-justify text-lg my-2 px-6 py-4">
             I always feel Confident and Passionate to develop website. I develop

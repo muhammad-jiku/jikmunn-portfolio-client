@@ -15,10 +15,10 @@ const Skills = () => {
       </h1>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
         {/* html5 */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">HTML5</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">HTML5</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -45,10 +45,10 @@ const Skills = () => {
           </div>
         </div>
         {/* css3 */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">CSS3</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">CSS3</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -75,10 +75,10 @@ const Skills = () => {
           </div>
         </div>
         {/* js */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">JavaScript</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">JavaScript</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -105,10 +105,10 @@ const Skills = () => {
           </div>
         </div>
         {/* bootstrap */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Bootstrap</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">Bootstrap</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -135,10 +135,10 @@ const Skills = () => {
           </div>
         </div>
         {/* tailwind */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Tailwind CSS</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">Tailwind CSS</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -165,10 +165,10 @@ const Skills = () => {
           </div>
         </div>
         {/* react */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">ReactJS</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">ReactJS</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -195,10 +195,10 @@ const Skills = () => {
           </div>
         </div>
         {/* react  bootstrap */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">React Bootstrap</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">React Bootstrap</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -225,10 +225,10 @@ const Skills = () => {
           </div>
         </div>
         {/* daisyui */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">DaisyUI</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">DaisyUI</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -255,10 +255,10 @@ const Skills = () => {
           </div>
         </div>
         {/* nodejs */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">NodeJS</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">NodeJS</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -285,10 +285,10 @@ const Skills = () => {
           </div>
         </div>
         {/* expressjs */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">ExpressJS</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">ExpressJS</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
@@ -315,10 +315,10 @@ const Skills = () => {
           </div>
         </div>
         {/* mongodb */}
-        <div class="card max-w-sm bg-secondary text-neutral-content my-4">
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">MongoDB</h2>
-            <div class="card-actions justify-center">
+        <div className="card max-w-sm bg-secondary text-neutral-content my-4">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">MongoDB</h2>
+            <div className="card-actions justify-center">
               {/* <CountUp end={90} duration={5} />% */}
               <ProgressBar
                 radius={100}
