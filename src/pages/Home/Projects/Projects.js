@@ -24,7 +24,7 @@ const Projects = () => {
         {projects?.slice(0, 3)?.map((project) => (
           <div
             key={project?._id}
-            class="card card-compact bg-secondary shadow-xl h-full"
+            className="card card-compact bg-secondary shadow-xl h-full"
           >
             <figure>
               <img
@@ -33,14 +33,14 @@ const Projects = () => {
                 className="h-96 w-full object-cover"
               />
             </figure>
-            <div class="card-body">
-              <h2 class="card-title">{project?.projectName}</h2>
+            <div className="card-body">
+              <h2 className="card-title">{project?.projectName}</h2>
               <p className="text-justify">{project?.details}</p>
 
-              <div class="flex justify-between">
+              <div className="flex justify-between">
                 <div className="justify-start">
                   <button
-                    class="btn btn-primary btn-sm md:btn-md"
+                    className="btn btn-primary btn-sm md:btn-md"
                     title="Client Side Code"
                   >
                     Read More
@@ -48,7 +48,7 @@ const Projects = () => {
                 </div>
                 <div className="justify-end">
                   <button
-                    class="btn btn-circle btn-primary btn-sm md:btn-md mr-2"
+                    className="btn btn-circle btn-primary btn-sm md:btn-md mr-2"
                     title="Client Side Code"
                   >
                     <a href={project?.clientSideCode}>
@@ -57,7 +57,7 @@ const Projects = () => {
                   </button>
                   {project?.serverSideCode && (
                     <button
-                      class="btn btn-circle btn-primary btn-sm md:btn-md"
+                      className="btn btn-circle btn-primary btn-sm md:btn-md"
                       title="Server Side Code"
                     >
                       <a href={project?.serverSideCode}>
