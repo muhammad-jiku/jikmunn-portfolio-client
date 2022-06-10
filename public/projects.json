@@ -28,5 +28,45 @@
     "siteLink": "https://jikmunn-carmania.web.app/",
     "clientSideCode": "https://github.com/muhammad-jiku/jikmunn-car-parts-client-side",
     "serverSideCode": "https://github.com/muhammad-jiku/jikmunn-car-parts-server-side"
+  },
+  {
+    "_id": 104,
+    "img": "https://i.ibb.co/r59Hf2m/convention.png",
+    "projectName": "Dr. Abdul Kader",
+    "details": "This is Dr. Abdul Kader's Appointment Website. Here a patient can book his/her appointment through the site. Here feature treatment services of doctors and by authenticating, a user can book an appointment and get his deserving treatment. this site also features patients' feedback.",
+    "technologies": "react,firebase, react-bootstrap, heroicons, react-roast, react-firebase-hooks, react-router",
+    "siteLink": "https://jikmunn-doctor-kader-time.web.app/",
+    "clientSideCode": "https://github.com/muhammad-jiku/jikmunn-doctor-kader",
+    "serverSideCode": ""
+  },
+  {
+    "_id": 105,
+    "img": "https://i.ibb.co/9HFL57H/influencer.png",
+    "projectName": "Bike Decor",
+    "details": "This inventory website is built for bike decor. Users or dealers can only stock bikes on this site. Users or dealers should be authenticated before using this site by google or github or by email. Users or dealers can deliver their choosable bikes, can restock them, and can add bike inventory to their inventories.",
+    "technologies": "bootstrap, react-bootstrap, axios, firebase, react-firebase-hooks, react-router-dom, react-toastify , font-awesome, google fonts.",
+    "siteLink": "https://bike-decor.web.app/",
+    "clientSideCode": "https://github.com/muhammad-jiku/jikmunn-bike-inventory-client-side",
+    "serverSideCode": "https://github.com/muhammad-jiku/jikmunn-bike-inventory-server-side"
+  },
+  {
+    "_id": 106,
+    "img": "https://i.ibb.co/DMcRDJg/sust.png",
+    "projectName": "Carmania",
+    "details": "This is Car accessory parts manufacturer site. Users can sign in to this site and then can place orders of car accessory parts and pay for orders by credit card, can update their profile, can add reviews. An admin can add car accessory parts, remove the accessory parts, manage all orders received from users, and change payment status to shipped if paid and can make other users admin.",
+    "technologies": "react, firebase, react-firebase-hooks, react-hook-form, react-query, tailwind css, daisyui, font-awesome, google fonts, react-toastify, react-router-dom, nodejs, mongodb, nodemon, jsonwebtoken, express, react-stripe, stripe, dotenv, cors",
+    "siteLink": "https://jikmunn-carmania.web.app/",
+    "clientSideCode": "https://github.com/muhammad-jiku/jikmunn-car-parts-client-side",
+    "serverSideCode": "https://github.com/muhammad-jiku/jikmunn-car-parts-server-side"
+  },
+  {
+    "_id": 107,
+    "img": "https://i.ibb.co/18sC7xb/restaurant.png",
+    "projectName": "Carmania",
+    "details": "This is Car accessory parts manufacturer site. Users can sign in to this site and then can place orders of car accessory parts and pay for orders by credit card, can update their profile, can add reviews. An admin can add car accessory parts, remove the accessory parts, manage all orders received from users, and change payment status to shipped if paid and can make other users admin.",
+    "technologies": "react, firebase, react-firebase-hooks, react-hook-form, react-query, tailwind css, daisyui, font-awesome, google fonts, react-toastify, react-router-dom, nodejs, mongodb, nodemon, jsonwebtoken, express, react-stripe, stripe, dotenv, cors",
+    "siteLink": "https://jikmunn-carmania.web.app/",
+    "clientSideCode": "https://github.com/muhammad-jiku/jikmunn-car-parts-client-side",
+    "serverSideCode": "https://github.com/muhammad-jiku/jikmunn-car-parts-server-side"
   }
 ]
