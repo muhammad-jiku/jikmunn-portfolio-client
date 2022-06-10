@@ -2,7 +2,7 @@ import { faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const About = () => {
+const Services = () => {
   return (
     <div className="container mx-auto px-6 my-8 lg:my-0">
       <h1
@@ -47,4 +47,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Services;
