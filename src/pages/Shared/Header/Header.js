@@ -1,19 +1,18 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
   const menuItems = (
     <>
       <li>
-        <p>About</p>
+        <Link to="/about_me">About</Link>
       </li>
       <li>
-        <p>Projects</p>
+        <Link to="/projects">Projects</Link>
       </li>
       <li>
-        <p>Skills</p>
-      </li>
-      <li>
-        <p>Contact</p>
+        <Link to="/blogs">Blogs</Link>
       </li>
     </>
   );
@@ -44,7 +43,12 @@ const Header = () => {
             {menuItems}
           </ul>
         </div>
-        <button className="btn btn-ghost normal-case text-xl">daisyUI</button>
+        <button
+          className="btn btn-ghost normal-case text-xl"
+          onClick={() => navigate('/')}
+        >
+          daisyUI
+        </button>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
