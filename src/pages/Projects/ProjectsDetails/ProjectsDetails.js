@@ -10,11 +10,15 @@ import {
 const ProjectsDetails = () => {
   const { projectId } = useParams();
   const [projectDetails, setProjectDetails] = useState({});
+  const [selectedImage, setSelectedImage] = useState('');
   const {
     projectName,
     img1,
     img2,
     img3,
+    img4,
+    img5,
+    img6,
     details,
     technologies,
     siteLink,
@@ -29,14 +33,21 @@ const ProjectsDetails = () => {
       .catch((err) => console.log(err));
   }, [projectId]);
 
+  useEffect(() => {
+    fetch(`https://jikmunn-portfolio.herokuapp.com/projects/${projectId}`)
+      .then((res) => res.json())
+      .then((data) => setSelectedImage(data?.img1))
+      .catch((err) => console.log(err));
+  }, [projectId]);
+
   return (
     <div className="container mx-auto my-8">
       {console.log(projectDetails)}
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row">
           <img
-            src={img1}
-            class="w-full lg:w-1/2 rounded-lg shadow-2xl object-contain border-2 border-primary"
+            src={selectedImage}
+            class="w-full lg:w-1/2 rounded-lg shadow-2xl object-cover border-2 border-primary h-80 lg:h-96"
             // style={{ height: '400px' }}
             alt={projectName}
           />
@@ -98,6 +109,70 @@ const ProjectsDetails = () => {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+      <div className="my-12">
+        <h1
+          className="text-2xl md:text-3xl font-bold text-primary text-center my-8"
+          style={{ fontFamily: 'Newsreader' }}
+        >
+          {projectName}'s previews
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8 place-items-center">
+          <img
+            src={img1}
+            // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+            class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+            title="Click image to change cover photo"
+            alt={projectName}
+            onClick={() => setSelectedImage(img1)}
+          />
+          <img
+            src={img2}
+            // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+            class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+            title="Click image to change cover photo"
+            alt={projectName}
+            onClick={() => setSelectedImage(img2)}
+          />
+          <img
+            src={img3}
+            // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+            class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+            title="Click image to change cover photo"
+            alt={projectName}
+            onClick={() => setSelectedImage(img3)}
+          />
+          {img4 && (
+            <img
+              src={img4}
+              // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+              class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+              title="Click image to change cover photo"
+              alt={projectName}
+              onClick={() => setSelectedImage(img4)}
+            />
+          )}
+          {img5 && (
+            <img
+              src={img5}
+              // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+              class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+              title="Click image to change cover photo"
+              alt={projectName}
+              onClick={() => setSelectedImage(img5)}
+            />
+          )}
+          {img6 && (
+            <img
+              src={img6}
+              // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+              class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+              title="Click image to change cover photo"
+              alt={projectName}
+              onClick={() => setSelectedImage(img6)}
+            />
+          )}
         </div>
       </div>
     </div>
