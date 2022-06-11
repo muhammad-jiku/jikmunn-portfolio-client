@@ -16,12 +16,13 @@ const Banner = () => {
   // };
 
   return (
-    <div className="hero">
+    <div className="hero min-h-screen md:min-h-full lg:min-h-screen">
       <div className="hero-content flex-col items-center lg:flex-row-reverse">
         <img
           src={me}
           alt="Muhammad Azizul Hoque Jiku"
-          style={{ width: '300px' }}
+          className="h-64 md:h-72"
+          // style={{ width: '300px' }}
         />
         <div>
           <h1

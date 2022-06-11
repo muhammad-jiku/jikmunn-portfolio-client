@@ -43,11 +43,11 @@ const ProjectsDetails = () => {
   return (
     <div className="container mx-auto my-8">
       {console.log(projectDetails)}
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div className="hero">
+        <div className="hero-content flex-col lg:flex-row">
           <img
             src={selectedImage}
-            class="w-full lg:w-1/2 rounded-lg shadow-2xl object-cover border-2 border-primary h-80 lg:h-96"
+            className="w-full lg:w-1/2 rounded-lg shadow-2xl object-cover border-2 border-primary h-80 lg:h-96"
             // style={{ height: '400px' }}
             alt={projectName}
           />
@@ -58,8 +58,8 @@ const ProjectsDetails = () => {
             >
               {projectName}
             </h1>
-            <p class="py-2 text-justify">{details}</p>
-            <p class="text-justify my-4">
+            <p className="py-2 text-justify">{details}</p>
+            <p className="text-justify my-4">
               <FontAwesomeIcon icon={faGlobe} />{' '}
               <a
                 href={siteLink}
@@ -71,7 +71,7 @@ const ProjectsDetails = () => {
                 Live Site{' '}
               </a>
             </p>
-            <p class="text-justify my-4">
+            <p className="text-justify my-4">
               <FontAwesomeIcon icon={faCode} />{' '}
               <a
                 href={clientSideCode}
@@ -84,7 +84,7 @@ const ProjectsDetails = () => {
               </a>
             </p>
             {serverSideCode && (
-              <p class="text-justify mt-4 mb-8">
+              <p className="text-justify mt-4 mb-8">
                 <FontAwesomeIcon icon={faCodeCompare} />{' '}
                 <a
                   href={serverSideCode}
@@ -97,12 +97,12 @@ const ProjectsDetails = () => {
                 </a>
               </p>
             )}
-            <p class="text-justify my-4">Technology</p>
+            <p className="text-justify my-4">Technology</p>
             <div className="flex flex-row flex-wrap justify-between">
               {technologies?.split(',')?.map((tech, idx) => (
                 <button
                   key={idx}
-                  class="btn btn-xs sm:btn-sm btn-active btn-primary m-2 rounded cursor-text"
+                  className="btn btn-xs sm:btn-sm btn-active btn-primary m-2 rounded cursor-text"
                 >
                   {tech}
                 </button>
@@ -121,24 +121,24 @@ const ProjectsDetails = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8 place-items-center">
           <img
             src={img1}
-            // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
-            class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+            // className="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+            className="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
             title="Click image to change cover photo"
             alt={projectName}
             onClick={() => setSelectedImage(img1)}
           />
           <img
             src={img2}
-            // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
-            class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+            // className="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+            className="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
             title="Click image to change cover photo"
             alt={projectName}
             onClick={() => setSelectedImage(img2)}
           />
           <img
             src={img3}
-            // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
-            class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+            // className="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+            className="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
             title="Click image to change cover photo"
             alt={projectName}
             onClick={() => setSelectedImage(img3)}
@@ -146,8 +146,8 @@ const ProjectsDetails = () => {
           {img4 && (
             <img
               src={img4}
-              // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
-              class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+              // className="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+              className="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
               title="Click image to change cover photo"
               alt={projectName}
               onClick={() => setSelectedImage(img4)}
@@ -156,8 +156,8 @@ const ProjectsDetails = () => {
           {img5 && (
             <img
               src={img5}
-              // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
-              class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+              // className="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+              className="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
               title="Click image to change cover photo"
               alt={projectName}
               onClick={() => setSelectedImage(img5)}
@@ -166,8 +166,8 @@ const ProjectsDetails = () => {
           {img6 && (
             <img
               src={img6}
-              // class="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
-              class="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
+              // className="h-60 lg:h-64 rounded-lg shadow-2xl object-cover border-2 border-primary"
+              className="w-96 rounded-lg shadow-2xl object-contain border-2 border-primary h-56 cursor-pointer"
               title="Click image to change cover photo"
               alt={projectName}
               onClick={() => setSelectedImage(img6)}

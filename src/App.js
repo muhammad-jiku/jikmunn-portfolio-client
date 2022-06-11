@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './pages/About/About';
 import Blogs from './pages/Blogs/Blogs';
 import ProjectsDetails from './pages/Projects/ProjectsDetails/ProjectsDetails';
+import Notfound from './pages/Shared/Notfound/Notfound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         {/* <Route path="/projects" element={<Projects />} /> */}
         <Route path="/projects/:projectId" element={<ProjectsDetails />} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
     </div>

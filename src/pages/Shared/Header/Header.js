@@ -21,7 +21,16 @@ const Header = () => {
   return (
     <div className="navbar">
       <div className="navbar-start">
-        <div className="dropdown">
+        <button
+          className="btn btn-ghost normal-case text-xs sm:text-sm md:text-xl text-primary"
+          onClick={() => navigate('/')}
+        >
+          <FontAwesomeIcon icon={faCode} className="mr-2" size="lg" />{' '}
+          <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
+        </button>
+      </div>
+      <div className="navbar-end">
+        <div className="dropdown dropdown-end">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,13 +54,6 @@ const Header = () => {
             {menuItems}
           </ul>
         </div>
-        <button
-          className="btn btn-ghost normal-case text-xs sm:text-sm md:text-xl text-primary"
-          onClick={() => navigate('/')}
-        >
-          <FontAwesomeIcon icon={faCode} className="mr-2" size="lg" />{' '}
-          <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
-        </button>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
