@@ -7,10 +7,10 @@ import resume from '../../assets/files/MUHAMMAD AZIZUL HOQUE JIKU.pdf';
 const About = () => {
   return (
     <div className="container mx-auto my-8">
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
+      <div className="hero min-h-screen bg-base-200">
+        <div className="hero-content flex-col lg:flex-row">
           <img
-            class="mask mask-diamond rounded-lg shadow-2xl h-80"
+            className="mask mask-diamond rounded-lg shadow-2xl h-80"
             src={me}
             alt="Muhammad Azizul Hoque Jiku"
           />
@@ -22,7 +22,7 @@ const About = () => {
             >
               Hello there!
             </h1>
-            <p class="py-6 text-justify">
+            <p className="py-6 text-justify">
               I am{' '}
               <span className="text-primary">Muhammad Azizul Hoque Jiku</span>.
               Welcome to my portfolio. I've designed and developed web
@@ -32,14 +32,14 @@ const About = () => {
               Figma, Canvas, and Chrome Dev Tools.
             </p>
 
-            <p class="py-6 text-justify">
+            <p className="py-6 text-justify">
               I've also built web applications with StripeJS, React Stripe,
               React-firebase-hooks, React-router, React-bootstrap, and DaisyUI.
               I love to work with MERN Stack. I like to call myself "a
               passionate MERN Stack Web Developer". In my spare time, I watch
               Football, Movies.
             </p>
-            <button class="btn btn-sm md:btn-md btn-primary">
+            <button className="btn btn-sm md:btn-md btn-primary">
               {' '}
               <a
                 href={resume}

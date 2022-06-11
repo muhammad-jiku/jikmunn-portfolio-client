@@ -30,7 +30,7 @@ const Projects = () => {
           >
             <figure>
               <img
-                src={project?.img2}
+                src={project?.img1}
                 alt={project?.projectName}
                 className="h-72 w-full object-cover"
               />
