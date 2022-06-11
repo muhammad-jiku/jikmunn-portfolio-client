@@ -3,10 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import me from '../../Images/me.jpg';
 import resume from '../../assets/files/MUHAMMAD AZIZUL HOQUE JIKU.pdf';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className="container mx-auto my-4">
+    <motion.div
+      initial={{ opacity: 0, width: 0 }}
+      animate={{ opacity: 1, width: '100%' }}
+      exit={{ opacity: 0, x: window?.innerWidth }}
+      className="container mx-auto my-4"
+    >
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row">
           <img
@@ -54,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

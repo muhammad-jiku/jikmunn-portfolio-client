@@ -6,6 +6,7 @@ import {
   faCodeCompare,
   faGlobe,
 } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 
 const ProjectsDetails = () => {
   const { projectId } = useParams();
@@ -41,7 +42,12 @@ const ProjectsDetails = () => {
   }, [projectId]);
 
   return (
-    <div className="container mx-auto my-8">
+    <motion.div
+      initial={{ opacity: 0, width: 0 }}
+      animate={{ opacity: 1, width: '100%' }}
+      exit={{ opacity: 0, x: window?.innerWidth }}
+      className="container mx-auto my-8"
+    >
       {console.log(projectDetails)}
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row">
@@ -102,7 +108,7 @@ const ProjectsDetails = () => {
               {technologies?.split(',')?.map((tech, idx) => (
                 <button
                   key={idx}
-                  className="btn btn-xs sm:btn-sm btn-active btn-primary m-2 rounded cursor-text"
+                  className="btn btn-xs sm:btn-sm btn-active btn-primary my-2 rounded cursor-text"
                 >
                   {tech}
                 </button>
@@ -175,7 +181,7 @@ const ProjectsDetails = () => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
