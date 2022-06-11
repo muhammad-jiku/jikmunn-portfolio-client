@@ -67,8 +67,8 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-                <FaFacebookF className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
+                <FaFacebookF className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -76,8 +76,8 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
-                <FaInstagram className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
+                <FaInstagram className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -86,8 +86,8 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               {' '}
-              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-                <FaTwitter className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
+                <FaTwitter className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -95,8 +95,8 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-                <FaLinkedinIn className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
+                <FaLinkedinIn className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -104,8 +104,8 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-white hover:text-black">
-                <FaGithub className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-white hover:text-black">
+                <FaGithub className="text-lg md:text-2xl" />
               </button>
             </a>
           </div>

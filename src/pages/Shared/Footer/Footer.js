@@ -18,8 +18,8 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-                <FaFacebookF className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
+                <FaFacebookF className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -27,8 +27,8 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
-                <FaInstagram className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
+                <FaInstagram className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -37,8 +37,8 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               {' '}
-              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-                <FaTwitter className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
+                <FaTwitter className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -46,8 +46,8 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-                <FaLinkedinIn className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-info hover:text-white">
+                <FaLinkedinIn className="text-lg md:text-2xl" />
               </button>
             </a>
             <a
@@ -55,15 +55,15 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-circle mr-2 hover:bg-white hover:text-black">
-                <FaGithub className="text-2xl" />
+              <button className="btn btn-circle btn-sm md:btn-md mr-2 hover:bg-white hover:text-black">
+                <FaGithub className="text-lg md:text-2xl" />
               </button>
             </a>
           </div>
           <p>
             Copyright © 2022 - All right reserved by{' '}
             <span
-              className="text-xl text-primary"
+              className="text-xs sm:text-sm md:text-xl text-primary"
               style={{ fontFamily: 'Comfortaa' }}
             >
               {' '}

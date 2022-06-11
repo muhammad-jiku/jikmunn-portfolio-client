@@ -17,11 +17,15 @@ const Banner = () => {
 
   return (
     <div className="hero">
-      <div className="hero-content flex-col items-center lg:flex-row-reverse min-h-screen">
-        <img src={me} alt="" style={{ width: '300px' }} />
+      <div className="hero-content flex-col items-center lg:flex-row-reverse">
+        <img
+          src={me}
+          alt="Muhammad Azizul Hoque Jiku"
+          style={{ width: '300px' }}
+        />
         <div>
           <h1
-            className="text-4xl md:text-5xl font-bold"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold"
             style={{ fontFamily: 'Newsreader' }}
           >
             I'm <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
@@ -39,7 +43,7 @@ const Banner = () => {
             connect with me.
           </p>
           <button
-            className="btn glass btn-sm md:btn-md"
+            className="btn glass btn-xs sm:btn-sm md:btn-md"
             // onClick={saveFile}
           >
             <a href={resume} target="_blank" rel="noreferrer" download="resume">
@@ -48,7 +52,7 @@ const Banner = () => {
             </a>
           </button>
           <button
-            className="btn active btn-sm md:btn-md ml-2"
+            className="btn active btn-xs sm:btn-sm md:btn-md ml-2"
             onClick={() => navigate('/about_me')}
           >
             About Me

@@ -4,7 +4,7 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <div className="container mx-auto px-6 my-8 lg:my-0">
+    <div className="container mx-auto px-6 sm:my-4 md:my-2">
       <h1
         className="text-2xl capitalize font-bold"
         style={{ fontFamily: 'Headland One' }}

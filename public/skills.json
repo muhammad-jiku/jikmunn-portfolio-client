@@ -1,0 +1,57 @@
+[
+  {
+    "language": "HTML5",
+    "percentage": 90,
+    "img": "https://i.ibb.co/Jv79Jkb/html5.png"
+  },
+  {
+    "language": "CSS3",
+    "percentage": 85,
+    "img": "https://i.ibb.co/nDKzMqr/css3.png"
+  },
+  {
+    "language": "JavaScript",
+    "percentage": 83,
+    "img": "https://i.ibb.co/GHfCdns/JS.png"
+  },
+  {
+    "language": "Bootstrap",
+    "percentage": 94,
+    "img": "https://i.ibb.co/2sCzbbj/bootstrap.png"
+  },
+  {
+    "language": "Tailwind CSS",
+    "percentage": 91,
+    "img": "https://i.ibb.co/9tm1sQk/tailwind.png"
+  },
+  {
+    "language": "ReactJS",
+    "percentage": 87,
+    "img": "https://i.ibb.co/wwTCMBd/reactjs.png"
+  },
+  {
+    "language": "React Bootstrap",
+    "percentage": 92,
+    "img": "https://i.ibb.co/W6rpdFb/react-bootstrap.png"
+  },
+  {
+    "language": "DaisyUI",
+    "percentage": 94,
+    "img": "https://i.ibb.co/jHVWKq9/daisyui.png"
+  },
+  {
+    "language": "NodeJS",
+    "percentage": 82,
+    "img": "https://i.ibb.co/z4xRR1h/nodejs.png"
+  },
+  {
+    "language": "ExpressJS",
+    "percentage": 84,
+    "img": "https://i.ibb.co/HBt41KV/expressjs.png"
+  },
+  {
+    "language": "MongoDB",
+    "percentage": 83,
+    "img": "https://i.ibb.co/WvqmdRR/mongodb.png"
+  }
+]

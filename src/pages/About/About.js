@@ -6,8 +6,8 @@ import resume from '../../assets/files/MUHAMMAD AZIZUL HOQUE JIKU.pdf';
 
 const About = () => {
   return (
-    <div className="container mx-auto my-8">
-      <div className="hero min-h-screen bg-base-200">
+    <div className="container mx-auto my-4">
+      <div className="hero">
         <div className="hero-content flex-col lg:flex-row">
           <img
             className="mask mask-diamond rounded-lg shadow-2xl h-80"

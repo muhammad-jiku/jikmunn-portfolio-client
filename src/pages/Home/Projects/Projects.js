@@ -21,7 +21,7 @@ const Projects = () => {
         <span className="text-primary">Recent</span> <span>Projects</span>
         <div className="bg-gradient-to-r from-primary to-secondary h-1 w-48"></div>
       </h1>
-      <div className="grid grid-cols-1 gap-5 my-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-4 lg:my-6">
         {/* projects*/}
         {projects?.slice(0, 3)?.map((project) => (
           <div
@@ -42,7 +42,7 @@ const Projects = () => {
               <div className="flex justify-between">
                 <div className="justify-start">
                   <button
-                    className="btn btn-primary btn-sm md:btn-md"
+                    className="btn btn-primary btn-xs sm:btn-sm md:btn-md mb-2 sm:mb-4"
                     title="Client Side Code"
                     onClick={() => navigate(`/projects/${project?._id}`)}
                   >
@@ -50,23 +50,32 @@ const Projects = () => {
                   </button>
                 </div>
                 <div className="justify-end">
-                  <button
-                    className="btn btn-circle btn-primary btn-sm md:btn-md mr-2"
-                    title="Client Side Code"
+                  <a
+                    href={project?.clientSideCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <a href={project?.clientSideCode}>
-                      <FontAwesomeIcon icon={faCode} />
-                    </a>
-                  </button>
-                  {project?.serverSideCode && (
                     <button
-                      className="btn btn-circle btn-primary btn-sm md:btn-md"
-                      title="Server Side Code"
+                      className="btn btn-circle btn-primary btn-sm md:btn-md mr-2"
+                      title="Client Side Code"
                     >
-                      <a href={project?.serverSideCode}>
-                        <FontAwesomeIcon icon={faCodeCompare} />
-                      </a>
+                      <FontAwesomeIcon icon={faCode} />
                     </button>
+                  </a>
+
+                  {project?.serverSideCode && (
+                    <a
+                      href={project?.serverSideCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button
+                        className="btn btn-circle btn-primary btn-sm md:btn-md"
+                        title="Server Side Code"
+                      >
+                        <FontAwesomeIcon icon={faCodeCompare} />
+                      </button>
+                    </a>
                   )}
                 </div>
               </div>

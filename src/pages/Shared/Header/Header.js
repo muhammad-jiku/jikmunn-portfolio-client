@@ -40,13 +40,13 @@ const Header = () => {
           </label>
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 glass"
           >
             {menuItems}
           </ul>
         </div>
         <button
-          className="btn btn-ghost normal-case text-xl text-primary"
+          className="btn btn-ghost normal-case text-xs sm:text-sm md:text-xl text-primary"
           onClick={() => navigate('/')}
         >
           <FontAwesomeIcon icon={faCode} className="mr-2" size="lg" />{' '}
