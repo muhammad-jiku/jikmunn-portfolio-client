@@ -61,31 +61,53 @@ const Contact = () => {
             feel free to connect with me.
           </p>
           <div className="my-6">
-            <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-              <a href="https://www.facebook.com/azizul.azizulhoquejiku/">
+            {' '}
+            <a
+              href="https://www.facebook.com/azizul.azizulhoquejiku/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
                 <FaFacebookF className="text-2xl" />
-              </a>
-            </button>
-            <button className="btn btn-circle mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
-              <a href="https://www.instagram.com/muhammadazizuljiku/">
+              </button>
+            </a>
+            <a
+              href="https://www.instagram.com/muhammadazizuljiku/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle mr-2 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:text-white">
                 <FaInstagram className="text-2xl" />
-              </a>
-            </button>
-            <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-              <a href="https://twitter.com/muhammadjiku364">
+              </button>
+            </a>
+            <a
+              href="https://twitter.com/muhammadjiku364"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
                 <FaTwitter className="text-2xl" />
-              </a>
-            </button>
-            <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
-              <a href="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/">
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammad-azizul-hoque-jiku-775057211/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle mr-2 hover:bg-info hover:text-white">
                 <FaLinkedinIn className="text-2xl" />
-              </a>
-            </button>
-            <button className="btn btn-circle mr-2 hover:bg-white hover:text-black">
-              <a href="https://github.com/muhammad-jiku">
+              </button>
+            </a>
+            <a
+              href="https://github.com/muhammad-jiku"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-circle mr-2 hover:bg-white hover:text-black">
                 <FaGithub className="text-2xl" />
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
         <div className="w-full max-w-sm lg:w-1/2 shadow-2xl">

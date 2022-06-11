@@ -1,3 +1,5 @@
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -44,10 +46,11 @@ const Header = () => {
           </ul>
         </div>
         <button
-          className="btn btn-ghost normal-case text-xl"
+          className="btn btn-ghost normal-case text-xl text-primary"
           onClick={() => navigate('/')}
         >
-          daisyUI
+          <FontAwesomeIcon icon={faCode} className="mr-2" size="lg" />{' '}
+          <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
         </button>
       </div>
       <div className="navbar-end hidden lg:flex">
