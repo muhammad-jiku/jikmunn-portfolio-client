@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faCodeCompare } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
+  const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    fetch('projects.json')
+    fetch('https://jikmunn-portfolio.herokuapp.com/projects')
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.log(err));
@@ -28,9 +30,9 @@ const Projects = () => {
           >
             <figure>
               <img
-                src={project?.img}
+                src={project?.img2}
                 alt={project?.projectName}
-                className="h-96 w-full object-cover"
+                className="h-72 w-full object-cover"
               />
             </figure>
             <div className="card-body">
@@ -42,6 +44,7 @@ const Projects = () => {
                   <button
                     className="btn btn-primary btn-sm md:btn-md"
                     title="Client Side Code"
+                    onClick={() => navigate(`/projects/${project?._id}`)}
                   >
                     Read More
                   </button>

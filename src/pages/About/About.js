@@ -22,7 +22,7 @@ const About = () => {
             >
               Hello there!
             </h1>
-            <p class="py-6">
+            <p class="py-6 text-justify">
               I am{' '}
               <span className="text-primary">Muhammad Azizul Hoque Jiku</span>.
               Welcome to my portfolio. I've designed and developed web
@@ -32,7 +32,7 @@ const About = () => {
               Figma, Canvas, and Chrome Dev Tools.
             </p>
 
-            <p class="py-6">
+            <p class="py-6 text-justify">
               I've also built web applications with StripeJS, React Stripe,
               React-firebase-hooks, React-router, React-bootstrap, and DaisyUI.
               I love to work with MERN Stack. I like to call myself "a
