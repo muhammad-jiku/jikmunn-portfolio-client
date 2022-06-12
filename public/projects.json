@@ -1,8 +1,8 @@
 [
   {
-    "img1": "https://i.ibb.co/NyMdnpf/doc.png",
-    "img2": "https://i.ibb.co/K2RJjfM/doc-2.png",
-    "img3": "https://i.ibb.co/k6pNpc1/doc-2.png",
+    "img1": "https://i.ibb.co/NVpwkXm/doc-1.png",
+    "img2": "https://i.ibb.co/ZhDwZbR/doc-4.png",
+    "img3": "https://i.ibb.co/x2YpB20/doc-5.png",
     "projectName": "Dr. Abdul Kader",
     "details": "This is Dr. Abdul Kader's Appointment Website. Here a patient can book his/her appointment through the site. Here feature treatment services of doctors and by authenticating, a user can book an appointment and get his deserving treatment. this site also features patients' feedback.",
     "technologies": "react,firebase, react-bootstrap, heroicons, react-roast, react-firebase-hooks, react-router",
@@ -11,9 +11,12 @@
     "serverSideCode": ""
   },
   {
-    "img1": "https://i.ibb.co/dbDVTkK/bike-inventory.png",
-    "img2": "https://i.ibb.co/Yh8yF4T/bike-2.png",
-    "img3": "https://i.ibb.co/QdNNBbB/bike-3.png",
+    "img1": "https://i.ibb.co/F0QvZhq/bike-1.png",
+    "img2": "https://i.ibb.co/bKQ9g1k/bike-2.png",
+    "img3": "https://i.ibb.co/pXJvpr8/bike-3.png",
+    "img4": "https://i.ibb.co/dG3WDk1/bike-4.png",
+    "img5": "https://i.ibb.co/Yh8yF4T/bike-2.png",
+    "img6": "https://i.ibb.co/q75dGnf/bike-6.png",
     "projectName": "Bike Decor",
     "details": "This inventory website is built for bike decor. Users or dealers can only stock bikes on this site. Users or dealers should be authenticated before using this site by google or github or by email. Users or dealers can deliver their choosable bikes, can restock them, and can add bike inventory to their inventories.",
     "technologies": "bootstrap, react-bootstrap, axios, firebase, react-firebase-hooks, react-router-dom, react-toastify , font-awesome, google fonts.",
@@ -22,9 +25,11 @@
     "serverSideCode": "https://github.com/muhammad-jiku/jikmunn-bike-inventory-server-side"
   },
   {
-    "img1": "https://i.ibb.co/TMkZbDp/carmania.png",
-    "img2": "https://i.ibb.co/G2WYbQC/carmania-2.png",
-    "img3": "https://i.ibb.co/fvvDDXw/carmania-3.png",
+    "img1": "https://i.ibb.co/j4LGcN6/carmania-1.png",
+    "img2": "https://i.ibb.co/jHZLT3d/carmania-2.png",
+    "img3": "https://i.ibb.co/J2YkYDb/carmania-3.png",
+    "img4": "https://i.ibb.co/GCswDQh/carmania-5.png",
+    "img5": "https://i.ibb.co/WBJQ97R/carmania-8.png",
     "projectName": "Carmania",
     "details": "This is Car accessory parts manufacturer site. Users can sign in to this site and then can place orders of car accessory parts and pay for orders by credit card, can update their profile, can add reviews. An admin can add car accessory parts, remove the accessory parts, manage all orders received from users, and change payment status to shipped if paid and can make other users admin.",
     "technologies": "react, firebase, react-firebase-hooks, react-hook-form, react-query, tailwind css, daisyui, font-awesome, google fonts, react-toastify, react-router-dom, nodejs, mongodb, nodemon, jsonwebtoken, express, react-stripe, stripe, dotenv, cors",

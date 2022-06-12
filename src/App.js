@@ -10,13 +10,17 @@ import ProjectsDetails from './pages/Projects/ProjectsDetails/ProjectsDetails';
 import Notfound from './pages/Shared/Notfound/Notfound';
 // import AnimatedRoute from './pages/AnimatedRoute/AnimatedRoute';
 import { AnimatePresence } from 'framer-motion';
+import ScrollToTop from './pages/AnimatedRoute/ScrollToTop';
+import Particle from './pages/AnimatedRoute/Particle';
 
 function App() {
   // framermotion
   const location = useLocation();
   return (
     <div className="App">
+      <ScrollToTop />
       <Header />
+      <Particle />
       <AnimatePresence>
         <Routes location={location} key={location?.pathname}>
           <Route path="/" element={<Home />} />

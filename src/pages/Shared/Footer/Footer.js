@@ -6,10 +6,12 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from 'react-icons/fa';
+import BackToTop from '../../AnimatedRoute/BackToTop';
 
 const Footer = () => {
   return (
     <div className="mt-auto pt-6">
+      <BackToTop />
       <footer className="footer footer-center p-4 bg-base-300 text-base-content glass">
         <div>
           <div>
