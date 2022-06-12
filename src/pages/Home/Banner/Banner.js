@@ -3,9 +3,9 @@ import me from '../../../Images/Jikum.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 // import { saveAs } from 'file-saver';
 import resume from '../../../assets/files/MUHAMMAD AZIZUL HOQUE JIKU.pdf';
-import { motion } from 'framer-motion';
 
 const Banner = () => {
   const navigate = useNavigate();
@@ -28,7 +28,6 @@ const Banner = () => {
           src={me}
           alt="Muhammad Azizul Hoque Jiku"
           className="h-64 md:h-72"
-          // style={{ width: '300px' }}
         />
         <div style={{ fontFamily: 'Headland One' }}>
           <h1

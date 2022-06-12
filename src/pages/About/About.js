@@ -1,9 +1,9 @@
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
 import React from 'react';
 import me from '../../Images/me.jpg';
 import resume from '../../assets/files/MUHAMMAD AZIZUL HOQUE JIKU.pdf';
-import { motion } from 'framer-motion';
 
 const About = () => {
   return (
