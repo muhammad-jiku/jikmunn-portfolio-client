@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faCodeCompare } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -21,7 +22,11 @@ const Projects = () => {
         <span className="text-primary">Recent</span> <span>Projects</span>
         <div className="bg-gradient-to-r from-primary to-secondary h-1 w-48"></div>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-4 lg:my-6">
+      <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+        transition={{ type: 'spring', duration: 8, bounce: 0.3 }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-4 lg:my-6">
         {/* projects*/}
         {projects?.slice(0, 3)?.map((project) => (
           <div
@@ -82,7 +87,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

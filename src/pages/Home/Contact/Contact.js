@@ -10,6 +10,7 @@ import {
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const {
@@ -43,7 +44,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 my-16">
+    <div
+      className="container mx-auto px-6 my-16"
+    >
       <ToastContainer />
       <h1
         className="text-2xl capitalize font-bold"
@@ -52,7 +55,10 @@ const Contact = () => {
         <span className="text-primary">Get in</span> <span>touch</span>
         <div className="bg-gradient-to-r from-primary to-secondary h-1 w-40"></div>
       </h1>
-      <div className="flex flex-col items-center justify-center md:justify-around lg:flex-row">
+      <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{ type: 'spring', duration: 10, bounce: 0.3 }} className="flex flex-col items-center justify-center md:justify-around lg:flex-row">
         <div className="w-full lg:w-1/2">
           <p className="py-6 text-xl text-justify">
             If you have any suggestions, projects, or even want to say “hello”,
@@ -192,7 +198,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -27,7 +27,6 @@ function App() {
           <Route path="*" element={<Notfound />} />
         </Routes>
       </AnimatePresence>
-
       {/* <AnimatedRoute /> */}
       <Footer />
     </div>

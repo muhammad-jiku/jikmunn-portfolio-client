@@ -1,11 +1,15 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import ProgressBar from 'react-customizable-progressbar';
+import { motion } from 'framer-motion';
 
 const Skill = ({ s }) => {
   const { language, percentage, img } = s;
   return (
-    <div className="card text-neutral-content my-4">
+    <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{ type: 'spring', duration: 6, bounce: 0.3 }} className="card text-neutral-content my-4">
       <div className="card-body items-center text-center">
         <img src={img} alt={language} className="h-10" />
         <h2 className="card-title">{language}</h2>
@@ -34,7 +38,7 @@ const Skill = ({ s }) => {
           </ProgressBar>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

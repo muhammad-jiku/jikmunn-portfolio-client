@@ -5,6 +5,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 // import { saveAs } from 'file-saver';
 import resume from '../../../assets/files/MUHAMMAD AZIZUL HOQUE JIKU.pdf';
+import { motion } from 'framer-motion';
 
 const Banner = () => {
   const navigate = useNavigate();
@@ -16,7 +17,12 @@ const Banner = () => {
   // };
 
   return (
-    <div className="hero min-h-screen md:min-h-full lg:min-h-screen">
+    <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+      className="hero min-h-screen md:min-h-full lg:min-h-screen"
+    >
       <div className="hero-content flex-col items-center lg:flex-row-reverse">
         <img
           src={me}
@@ -61,7 +67,7 @@ const Banner = () => {
           {/* <button className="btn btn-primary ml-2"></button> */}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

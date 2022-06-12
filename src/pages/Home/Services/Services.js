@@ -1,6 +1,7 @@
 import { faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Services = () => {
   return (
@@ -12,7 +13,10 @@ const Services = () => {
         <span className="text-primary">what</span> <span>i do</span>
         <div className="bg-gradient-to-r from-primary to-secondary h-1 w-32"></div>
       </h1>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{ type: 'spring', duration: 4, bounce: 0.3 }} className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div className="my-4">
           <h1 className="text-primary text-xl">
             <FontAwesomeIcon icon={faCode} className="mr-2" size="lg" />{' '}
@@ -42,7 +46,7 @@ const Services = () => {
             i have used CORS, Stripe.js, JWT, React Stripe.
           </h1>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
