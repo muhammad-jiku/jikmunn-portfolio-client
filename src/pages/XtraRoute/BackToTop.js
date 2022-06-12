@@ -38,7 +38,7 @@ const BackToTop = () => {
   return (
     <>
       {backToTopButton && (
-        <button className="btn btn-circle btn-primary btn-md fixed bottom-28 md:bottom-32 right-4">
+        <button className="btn btn-circle btn-primary btn-md fixed bottom-28 md:bottom-32 right-4 text-white">
           <FaArrowUp
             onClick={goToTop}
             //   style={{ display: visible ? 'inline' : 'none' }}

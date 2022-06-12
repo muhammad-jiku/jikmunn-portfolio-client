@@ -10,7 +10,7 @@ const Blogs = () => {
       className="container mx-auto my-6"
     >
       <h1
-        className="text-4xl md:text-5xl font-bold text-center capitalize text-primary"
+        className="text-4xl md:text-5xl font-bold text-center capitalize"
         style={{ fontFamily: 'Newsreader' }}
       >
         Blogs coming soon

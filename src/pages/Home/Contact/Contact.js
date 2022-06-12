@@ -46,6 +46,7 @@ const Contact = () => {
   return (
     <div
       className="container mx-auto px-6 my-16"
+      style={{ fontFamily: 'Headland One' }}
     >
       <ToastContainer />
       <h1
@@ -56,9 +57,11 @@ const Contact = () => {
         <div className="bg-gradient-to-r from-primary to-secondary h-1 w-40"></div>
       </h1>
       <motion.div
-      initial={{ x: '-100vw' }}
-      animate={{ x: 0 }}
-      transition={{ type: 'spring', duration: 10, bounce: 0.3 }} className="flex flex-col items-center justify-center md:justify-around lg:flex-row">
+        initial={{ x: '-100vw' }}
+        animate={{ x: 0 }}
+        transition={{ type: 'spring', duration: 10, bounce: 0.3 }}
+        className="flex flex-col items-center justify-center md:justify-around lg:flex-row"
+      >
         <div className="w-full lg:w-1/2">
           <p className="py-6 text-xl text-justify">
             If you have any suggestions, projects, or even want to say “hello”,
@@ -193,6 +196,7 @@ const Contact = () => {
                   type="submit"
                   className="btn btn-primary text-white uppercase"
                   value="Send Message"
+                  style={{ fontFamily: 'poppins' }}
                 />
               </div>
             </form>

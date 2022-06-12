@@ -9,7 +9,9 @@ const Skill = ({ s }) => {
     <motion.div
       initial={{ x: '-100vw' }}
       animate={{ x: 0 }}
-      transition={{ type: 'spring', duration: 6, bounce: 0.3 }} className="card text-neutral-content my-4">
+      transition={{ type: 'spring', duration: 6, bounce: 0.3 }}
+      className="card text-neutral-content my-4"
+    >
       <div className="card-body items-center text-center">
         <img src={img} alt={language} className="h-10" />
         <h2 className="card-title">{language}</h2>

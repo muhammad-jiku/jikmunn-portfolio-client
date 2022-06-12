@@ -8,10 +8,10 @@ import About from './pages/About/About';
 import Blogs from './pages/Blogs/Blogs';
 import ProjectsDetails from './pages/Projects/ProjectsDetails/ProjectsDetails';
 import Notfound from './pages/Shared/Notfound/Notfound';
-// import AnimatedRoute from './pages/AnimatedRoute/AnimatedRoute';
+// import AnimatedRoute from './pages/XtraRoute/AnimatedRoute';
 import { AnimatePresence } from 'framer-motion';
-import ScrollToTop from './pages/AnimatedRoute/ScrollToTop';
-import Particle from './pages/AnimatedRoute/Particle';
+import ScrollToTop from './pages/XtraRoute/ScrollToTop';
+import Particle from './pages/XtraRoute/Particle';
 
 function App() {
   // framermotion

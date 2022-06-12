@@ -30,22 +30,19 @@ const Banner = () => {
           className="h-64 md:h-72"
           // style={{ width: '300px' }}
         />
-        <div>
+        <div style={{ fontFamily: 'Headland One' }}>
           <h1
             className="text-3xl sm:text-4xl md:text-5xl font-bold"
             style={{ fontFamily: 'Newsreader' }}
           >
             I'm <span className="text-primary">Muhammad Azizul Hoque Jiku</span>
           </h1>
-          <h1
-            className="text-xl md:text-3xl text-secondary"
-            style={{ fontFamily: 'Headland One' }}
-          >
+          <h1 className="text-xl md:text-3xl text-secondary">
             MERN Stack Web Developer
           </h1>
-          <p className=" py-4 text-justify">
+          <p className="py-4 text-justify">
             <span className="text-2xl">W</span>elcome to my portfolio that I've
-            designed to showcase my skills and expertise that I've accumulated
+            designed to showcase the skills and expertise that I've accumulated
             over the year. I've also placed all my social links, feel free to
             connect with me.
           </p>

@@ -23,15 +23,16 @@ const Projects = () => {
         <div className="bg-gradient-to-r from-primary to-secondary h-1 w-48"></div>
       </h1>
       <motion.div
-      initial={{ x: '-100vw' }}
-      animate={{ x: 0 }}
+        initial={{ x: '-100vw' }}
+        animate={{ x: 0 }}
         transition={{ type: 'spring', duration: 8, bounce: 0.3 }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-4 lg:my-6">
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-4 lg:my-6"
+      >
         {/* projects*/}
         {projects?.slice(0, 3)?.map((project) => (
           <div
             key={project?._id}
-            className="card card-compact bg-secondary shadow-xl h-full"
+            className="card card-compact bg-neutral shadow-xl h-full"
           >
             <figure>
               <img
@@ -40,15 +41,22 @@ const Projects = () => {
                 className="h-72 w-full object-cover"
               />
             </figure>
-            <div className="card-body">
-              <h2 className="card-title">{project?.projectName}</h2>
+            <div className="card-body" style={{ fontFamily: 'Headland One' }}>
+              <h2
+                className="card-title text-primary"
+                style={{ fontFamily: 'Newsreader' }}
+              >
+                {project?.projectName}
+              </h2>
               <p className="text-justify">{project?.details}</p>
 
               <div className="flex justify-between">
-                <div className="justify-start">
+                <div
+                  className="justify-start"
+                  style={{ fontFamily: 'poppins' }}
+                >
                   <button
-                    className="btn btn-primary btn-xs sm:btn-sm md:btn-md mb-2 sm:mb-4"
-                    title="Client Side Code"
+                    className="btn btn-primary btn-xs sm:btn-sm md:btn-md mb-2 sm:mb-4 text-white"
                     onClick={() => navigate(`/projects/${project?._id}`)}
                   >
                     Read More
@@ -61,7 +69,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                   >
                     <button
-                      className="btn btn-circle btn-primary btn-sm md:btn-md mr-2"
+                      className="btn btn-circle btn-primary btn-sm md:btn-md mr-2 text-white"
                       title="Client Side Code"
                     >
                       <FontAwesomeIcon icon={faCode} />
@@ -75,7 +83,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <button
-                        className="btn btn-circle btn-primary btn-sm md:btn-md"
+                        className="btn btn-circle btn-primary btn-sm md:btn-md text-white"
                         title="Server Side Code"
                       >
                         <FontAwesomeIcon icon={faCodeCompare} />

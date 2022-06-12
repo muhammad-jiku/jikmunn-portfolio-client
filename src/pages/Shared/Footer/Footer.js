@@ -6,9 +6,10 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from 'react-icons/fa';
-import BackToTop from '../../AnimatedRoute/BackToTop';
+import BackToTop from '../../XtraRoute/BackToTop';
 
 const Footer = () => {
+  const date = new Date();
   return (
     <div className="mt-auto pt-6">
       <BackToTop />
@@ -63,7 +64,7 @@ const Footer = () => {
             </a>
           </div>
           <p>
-            Copyright © 2022 - All right reserved by{' '}
+            Copyright © {date?.getFullYear()} - All right reserved by{' '}
             <span
               className="text-xs sm:text-sm md:text-xl text-primary"
               style={{ fontFamily: 'Comfortaa' }}

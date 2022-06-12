@@ -16,12 +16,12 @@ const About = () => {
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row">
           <img
-            className="mask mask-diamond rounded-lg shadow-2xl h-80"
+            className="mask mask-diamond rounded-lg shadow-2xl first-line:h-64 md:h-72"
             src={me}
             alt="Muhammad Azizul Hoque Jiku"
           />
 
-          <div>
+          <div style={{ fontFamily: 'Headland One' }}>
             <h1
               className="text-4xl md:text-5xl font-bold capitalize text-primary"
               style={{ fontFamily: 'Headland One' }}
@@ -45,18 +45,16 @@ const About = () => {
               passionate MERN Stack Web Developer". In my spare time, I watch
               Football, Movies.
             </p>
-            <button className="btn btn-sm md:btn-md btn-primary">
-              {' '}
-              <a
-                href={resume}
-                target="_blank"
-                rel="noreferrer"
-                download="resume"
+            <a href={resume} target="_blank" rel="noreferrer" download="resume">
+              <button
+                className="btn btn-sm md:btn-md btn-primary text-white"
+                style={{ fontFamily: 'Poppins' }}
               >
+                {' '}
                 Download Resume{' '}
                 <FontAwesomeIcon icon={faDownload} className="ml-2" size="lg" />
-              </a>
-            </button>
+              </button>{' '}
+            </a>
           </div>
         </div>
       </div>
